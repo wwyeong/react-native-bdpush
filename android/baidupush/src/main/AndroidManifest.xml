@@ -101,24 +101,24 @@
         <!-- 适配Android N系统必需的ContentProvider声明，写权限包含应用包名-->
         <provider
                 android:name="com.baidu.android.pushservice.PushInfoProvider"
-                android:authorities="当前项目包名"
-                android:writePermission="baidu.push.permission.WRITE_PUSHINFOPROVIDER.当前项目包名"
+                android:authorities="your_package_name"
+                android:writePermission="baidu.push.permission.WRITE_PUSHINFOPROVIDER.your_package_name"
                 android:exported="true" />
 
 
         <!-- 在百度开发者中心查询应用的API Key -->
         <meta-data
                 android:name="api_key"
-                android:value="你的ApiKey" />
+                android:value="your_api_key" />
 
 
 
     </application>
 
     <!-- 适配Android N系统必需的ContentProvider写权限声明，写权限包含应用包名-->
-    <uses-permission android:name="baidu.push.permission.WRITE_PUSHINFOPROVIDER.当前项目包名" />
+    <uses-permission android:name="baidu.push.permission.WRITE_PUSHINFOPROVIDER.your_package_name" />
     <permission
-            android:name="baidu.push.permission.WRITE_PUSHINFOPROVIDER.当前项目包名"
+            android:name="baidu.push.permission.WRITE_PUSHINFOPROVIDER.your_package_name"
             android:protectionLevel="normal">
     </permission>
 
